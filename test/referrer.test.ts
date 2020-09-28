@@ -1,5 +1,5 @@
 import { getReferrer } from '../src';
-import { ReferrerName, ReferrerType } from '../src/shared';
+import { ReferrerName, ReferrerType } from '../src/shared/referrer.interface';
 
 const GOOGLE = 'https://www.google.com/';
 

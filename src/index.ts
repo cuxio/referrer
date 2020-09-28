@@ -1,4 +1,5 @@
-import { Referrer, parseReferrer } from './shared';
+import { Referrer } from './shared/referrer.interface';
+import { parseReferrer } from './shared/referrer.helpers';
 
 /**
  * @param {string} referrer

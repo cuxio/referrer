@@ -1,4 +1,4 @@
-import { ReferrerMatcher, ReferrerName, ReferrerType } from '../shared';
+import { ReferrerMatcher, ReferrerName, ReferrerType } from '../shared/referrer.interface';
 
 export const socialMatchers: ReferrerMatcher[] = [
   {
