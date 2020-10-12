@@ -22,6 +22,8 @@
     "analyze": "size-limit --why"
   },
   "peerDependencies": {},
+  "homepage": "https://github.com/cuxio/referrer",
+  "repository": "https://github.com/cuxio/referrer.git",
   "husky": {
     "hooks": {
       "pre-commit": "tsdx lint"
