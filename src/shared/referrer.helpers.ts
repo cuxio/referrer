@@ -28,3 +28,26 @@ export const parseReferrer = (referrer: string): Referrer => {
     name: referrer,
   };
 };
+
+/**
+ * @param {string} referrer
+ * @returns {string}
+ */
+export const parseReferrerRegex = (referrer: ReferrerType): string => {
+  if (referrer === ReferrerType.ORGANIC) {
+    return '';
+  }
+
+  if (!Object.values<string>(ReferrerType).includes(referrer)) {
+    return referrer;
+  }
+
+  return referrerMatchers
+    .filter(({ type }) => type === referrer)
+    .reduce((acc, { contains }) => {
+      acc.push(...contains);
+
+      return acc;
+    }, [] as string[])
+    .join('|');
+};
